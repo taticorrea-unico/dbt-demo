@@ -1,0 +1,11 @@
+dbt_demo:
+  outputs:
+    dev:
+      catalog: null
+      host: 364265745043268.8.gcp.databricks.com
+      http_path: sql/protocolv1/o/364265745043268/1007-150328-6hwwmil8
+      schema: schema_dbt_workflow
+      threads: 1
+      token: dapid092344608207dfdf78d6a082da62f86
+      type: databricks
+  target: dev

@@ -104,3 +104,100 @@ Happy modeling!
 [0m16:51:29.338292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116b50940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116b50790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116b701c0>]}
 [0m16:51:29.339231 [debug] [MainThread]: Flushing usage events
 [0m16:51:29.963965 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-10-13 14:35:04.855819 | 966b2ba9-55bc-451e-b298-97d40dee042f ==============================
+[0m14:35:04.855875 [info ] [MainThread]: Running with dbt=1.2.1
+[0m14:35:04.856290 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/tcsilva/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m14:35:04.856543 [debug] [MainThread]: Tracking: tracking
+[0m14:35:04.878416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c57cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c57e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c57df0>]}
+[0m14:35:04.881926 [debug] [MainThread]: Set downloads directory='/var/folders/w0/s3mbsxd16_11s_lm9ktylhbh0000gp/T/dbt-downloads-8bn1effn'
+[0m14:35:04.883296 [debug] [MainThread]: Executing "git clone --depth 1 git@github.com:taticorrea-unico/dbt-shared.git a94bbf9cd452d751ed6abe35e86d7cd7"
+[0m14:35:07.113611 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:07.114943 [debug] [MainThread]: STDERR: "b"Cloning into 'a94bbf9cd452d751ed6abe35e86d7cd7'...\n""
+[0m14:35:07.115654 [debug] [MainThread]: Pulling new dependency a94bbf9cd452d751ed6abe35e86d7cd7.
+[0m14:35:07.115824 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:35:07.124421 [debug] [MainThread]: STDOUT: "b'a31cf3a5878ecccbb7deaf5793ca7b5ea8a4ed01\n'"
+[0m14:35:07.125716 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:07.126063 [debug] [MainThread]:   Checking out revision main.
+[0m14:35:07.126270 [debug] [MainThread]: Executing "git remote set-branches origin main"
+[0m14:35:07.136180 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:07.137055 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:07.137344 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags main"
+[0m14:35:09.209000 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:09.210569 [debug] [MainThread]: STDERR: "b'From github.com:taticorrea-unico/dbt-shared\n * branch            main       -> FETCH_HEAD\n'"
+[0m14:35:09.211042 [debug] [MainThread]: Executing "git tag --list"
+[0m14:35:09.221542 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:09.222619 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:09.222970 [debug] [MainThread]: Executing "git reset --hard origin/main"
+[0m14:35:09.238489 [debug] [MainThread]: STDOUT: "b'HEAD is now at a31cf3a ajustes\n'"
+[0m14:35:09.239641 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:09.239925 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:35:09.249086 [debug] [MainThread]: STDOUT: "b'a31cf3a5878ecccbb7deaf5793ca7b5ea8a4ed01\n'"
+[0m14:35:09.250268 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:09.250601 [debug] [MainThread]:   Checked out at a31cf3a.
+[0m14:35:09.251040 [warn ] [MainThread]: [33mWARNING: The git package "git@github.com:taticorrea-unico/dbt-shared.git" 
+	is pinned to the "main" branch.
+	This can introduce breaking changes into your project without warning!
+
+See https://docs.getdbt.com/docs/package-management#section-specifying-package-versions[0m
+[0m14:35:09.261932 [debug] [MainThread]: Executing "git clone --depth 1 git@github.com:taticorrea-unico/dbt-shared.git a94bbf9cd452d751ed6abe35e86d7cd7"
+[0m14:35:09.270670 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:09.272011 [debug] [MainThread]: STDERR: "b"fatal: destination path 'a94bbf9cd452d751ed6abe35e86d7cd7' already exists and is not an empty directory.\n""
+[0m14:35:09.272413 [debug] [MainThread]: command return code=128
+[0m14:35:09.273823 [debug] [MainThread]: Updating existing dependency a94bbf9cd452d751ed6abe35e86d7cd7.
+[0m14:35:09.274030 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:35:09.283245 [debug] [MainThread]: STDOUT: "b'a31cf3a5878ecccbb7deaf5793ca7b5ea8a4ed01\n'"
+[0m14:35:09.284318 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:09.284638 [debug] [MainThread]:   Checking out revision main.
+[0m14:35:09.284852 [debug] [MainThread]: Executing "git remote set-branches origin main"
+[0m14:35:09.295019 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:09.296215 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:09.296430 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags main"
+[0m14:35:11.404697 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:11.406025 [debug] [MainThread]: STDERR: "b'From github.com:taticorrea-unico/dbt-shared\n * branch            main       -> FETCH_HEAD\n'"
+[0m14:35:11.406361 [debug] [MainThread]: Executing "git tag --list"
+[0m14:35:11.416974 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:11.418144 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:11.418483 [debug] [MainThread]: Executing "git reset --hard origin/main"
+[0m14:35:11.429652 [debug] [MainThread]: STDOUT: "b'HEAD is now at a31cf3a ajustes\n'"
+[0m14:35:11.430697 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:11.431025 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:35:11.440330 [debug] [MainThread]: STDOUT: "b'a31cf3a5878ecccbb7deaf5793ca7b5ea8a4ed01\n'"
+[0m14:35:11.441745 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:11.442185 [debug] [MainThread]: Already at a31cf3a, nothing to do.
+[0m14:35:11.442550 [warn ] [MainThread]: [33mWARNING: The git package "git@github.com:taticorrea-unico/dbt-shared.git" 
+	is pinned to the "main" branch.
+	This can introduce breaking changes into your project without warning!
+
+See https://docs.getdbt.com/docs/package-management#section-specifying-package-versions[0m
+[0m14:35:11.454438 [info ] [MainThread]: Installing git@github.com:taticorrea-unico/dbt-shared.git
+[0m14:35:11.455162 [debug] [MainThread]: Executing "git clone --depth 1 git@github.com:taticorrea-unico/dbt-shared.git a94bbf9cd452d751ed6abe35e86d7cd7"
+[0m14:35:11.466480 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:11.467873 [debug] [MainThread]: STDERR: "b"fatal: destination path 'a94bbf9cd452d751ed6abe35e86d7cd7' already exists and is not an empty directory.\n""
+[0m14:35:11.468232 [debug] [MainThread]: command return code=128
+[0m14:35:11.469476 [debug] [MainThread]: Updating existing dependency a94bbf9cd452d751ed6abe35e86d7cd7.
+[0m14:35:11.469903 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:35:11.479460 [debug] [MainThread]: STDOUT: "b'a31cf3a5878ecccbb7deaf5793ca7b5ea8a4ed01\n'"
+[0m14:35:11.480666 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:11.481251 [debug] [MainThread]:   Checking out revision main.
+[0m14:35:11.481541 [debug] [MainThread]: Executing "git remote set-branches origin main"
+[0m14:35:11.492453 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:11.493590 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:11.493832 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags main"
+[0m14:35:13.523790 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:13.525568 [debug] [MainThread]: STDERR: "b'From github.com:taticorrea-unico/dbt-shared\n * branch            main       -> FETCH_HEAD\n'"
+[0m14:35:13.526029 [debug] [MainThread]: Executing "git tag --list"
+[0m14:35:13.537737 [debug] [MainThread]: STDOUT: "b''"
+[0m14:35:13.538883 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:13.539398 [debug] [MainThread]: Executing "git reset --hard origin/main"
+[0m14:35:13.554145 [debug] [MainThread]: STDOUT: "b'HEAD is now at a31cf3a ajustes\n'"
+[0m14:35:13.555554 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:13.556041 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:35:13.565362 [debug] [MainThread]: STDOUT: "b'a31cf3a5878ecccbb7deaf5793ca7b5ea8a4ed01\n'"
+[0m14:35:13.566688 [debug] [MainThread]: STDERR: "b''"
+[0m14:35:13.567036 [debug] [MainThread]: Already at a31cf3a, nothing to do.
+[0m14:35:13.567518 [info ] [MainThread]:   Installed from revision main
+[0m14:35:13.568636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '966b2ba9-55bc-451e-b298-97d40dee042f', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c82280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c82af0>]}
+[0m14:35:13.570161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c57cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c82970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c82e80>]}
+[0m14:35:13.570556 [debug] [MainThread]: Flushing usage events
